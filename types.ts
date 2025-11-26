@@ -51,4 +51,17 @@ export interface ReportSection {
   excerpt: string;
   icon: React.ReactNode;
   content: React.ReactNode;
+  speechContent: string; // Plain text for TTS
+}
+
+export interface AudioPlayerContextType {
+  isPlaying: boolean;
+  isLoading: boolean;
+  currentTitle: string | null;
+  error: string | null;
+  playText: (text: string, title?: string) => Promise<void>;
+  togglePlayPause: () => void;
+  stop: () => void;
+  seek: (seconds: number) => void; // + or - seconds
+  restart: () => void;
 }

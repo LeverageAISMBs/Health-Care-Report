@@ -9,12 +9,13 @@ import { SatisfactionChart } from './components/charts/SatisfactionChart';
 import { ImmigrationChart } from './components/charts/ImmigrationChart';
 import { RankingTable } from './components/RankingTable';
 import { FullReportView } from './components/FullReportView';
+import { AudioPlayer } from './components/AudioPlayer';
 
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<ViewState>(ViewState.SUMMARY);
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800">
+    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800 pb-20"> {/* pb-20 for Audio Player space */}
       <Header currentView={currentView} setView={setCurrentView} />
 
       <main className="flex-grow">
@@ -51,7 +52,7 @@ const App: React.FC = () => {
                     they struggle with wait times. Conversely, Multi-payer systems like <strong>Switzerland</strong> maintain high access speeds.
                   </p>
                   <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-600">
-                    <p class="font-bold text-sky-800 text-sm">KEY INSIGHT</p>
+                    <p className="font-bold text-sky-800 text-sm">KEY INSIGHT</p>
                     <p className="text-sm text-sky-900 mt-1">
                       Systems with a private provision element or "gatekeeper" copayments tend to have 30-50% shorter wait times than purely tax-funded models.
                     </p>
@@ -124,6 +125,7 @@ const App: React.FC = () => {
       </main>
 
       <Footer currentView={currentView} setView={setCurrentView} />
+      <AudioPlayer />
     </div>
   );
 };

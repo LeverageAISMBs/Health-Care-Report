@@ -8,6 +8,7 @@ export const reportSections: ReportSection[] = [
     title: 'Executive Summary',
     excerpt: 'The global landscape of Universal Health Coverage is undergoing a seismic shift. Benchmarks are being redefined by workforce stability and financial sustainability.',
     icon: <BookOpen size={24} />,
+    speechContent: `Executive Summary. The global landscape of Universal Health Coverage is undergoing a seismic shift. As nations navigate the post-pandemic era, the traditional benchmarks of health system success—longevity and access—are being redefined by new, volatile variables: workforce stability, financial sustainability in an inflationary environment, and the capacity to integrate rapid technological innovation. This extensive research report provides a comprehensive evaluation of 50 distinct national health systems that have achieved or are on the brink of achieving universal coverage. The findings reveal a bifurcation in global health performance. The historic dominance of Western European, tax-funded systems is eroding under the pressure of demographic aging and "medical brain drain," while agile, hybrid insurance models in the Asia-Pacific region are emerging as the new exemplars. Critically, this report identifies "Provider Satisfaction" not merely as a labor metric, but as the leading indicator of a system’s future viability.`,
     content: (
       <>
         <p className="lead text-lg text-slate-600 mb-6">
@@ -33,6 +34,7 @@ export const reportSections: ReportSection[] = [
     title: '1. Conceptual Framework & Methodology',
     excerpt: 'Defining Universal Health Coverage in 2025 and the composite index metrics used for ranking.',
     icon: <Scale size={24} />,
+    speechContent: `Section 1. Conceptual Framework and Methodology. For the purposes of this comparative analysis, Universal Health Coverage is defined in accordance with the World Health Organization’s principles but operationalized through strict inclusion criteria. A country is deemed to have UHC if it possesses legislation mandating access to essential health services for at least 99% of its legal residents. The Ranking Metrics are a Composite Index including: Broad Statistical Health Outcomes weighted at 20%; Time to See a Specialist weighted at 15%; Financial Protection weighted at 15%; Provider Satisfaction and Workforce Stability weighted at 15%; Patient Satisfaction at 10%; Innovation at 10%; and the Impact on High-Value Immigration at 15%.`,
     content: (
       <>
         <h4 className="text-xl font-bold mb-3">1.1 Defining Universal Health Coverage in the 2025 Context</h4>
@@ -75,6 +77,7 @@ export const reportSections: ReportSection[] = [
     title: '2. The Global Vanguard (Rank 1–10)',
     excerpt: 'The elite tier that successfully decouples universal coverage from waiting lists.',
     icon: <Globe2 size={24} />,
+    speechContent: `Section 2. The Global Vanguard, Ranks 1 through 10. The top ten health systems in 2025 share a common characteristic: they have successfully decoupled "universal coverage" from "waiting lists." Number 1 is Singapore. Its philosophy of "shared responsibility" prevents moral hazard while ensuring safety. Number 2 is Taiwan, offering arguably the most barrier-free access in the world. Number 3 is Australia, which balances a public safety net with a thriving private sector and is a magnet for global medical talent. Number 4 is The Netherlands, using managed competition. Number 5 is Switzerland, the luxury model of UHC. Rounding out the top 10 are South Korea, Germany, Israel, Japan, and Sweden.`,
     content: (
       <>
         <p className="mb-6">
@@ -128,6 +131,7 @@ export const reportSections: ReportSection[] = [
     title: '3. High-Performing Contenders (Rank 11–25)',
     excerpt: 'Wealthy nations grappling with structural challenges like workforce shortages and wait times.',
     icon: <AlertTriangle size={24} />,
+    speechContent: `Section 3. High-Performing Contenders, Rank 11 through 25. This tier consists of wealthy nations grappling with structural challenges. Scandinavia, including Norway, Denmark, Finland, and Iceland, shows excellence in clinical quality but struggles with elective wait times. The Beveridge Crisis is evident in the UK, Canada, and New Zealand. The UK's NHS is in deep crisis with over 7 million on waiting lists. Canada is culturally cherished but ranks near the bottom for specialist wait times. Conversely, rising stars like the UAE and Ireland are attracting professionals and investment.`,
     content: (
       <>
         <p className="mb-6">
@@ -167,6 +171,7 @@ export const reportSections: ReportSection[] = [
     title: '4. Emerging & Transitioning (Rank 26–50)',
     excerpt: 'Nations integrating into EU standards and developing economies enacting UHC.',
     icon: <TrendingUp size={24} />,
+    speechContent: `Section 4. Emerging and Transitioning Systems, Rank 26 through 50. In Southern Europe, nations like Italy and Spain have high life expectancy but were severely impacted by austerity and are facing a doctor exodus. Eastern European nations like the Czech Republic and Slovenia are strong performers, while Estonia pioneers e-Health. Developing giants like Thailand have successfully implemented UHC, while India's Ayushman Bharat is the world's largest insurance program, though high out-of-pocket costs remain a risk.`,
     content: (
       <>
         <div className="grid grid-cols-1 gap-6">
@@ -207,6 +212,7 @@ export const reportSections: ReportSection[] = [
     title: '5. Comparative Thematic Analysis',
     excerpt: 'Workforce crisis, access vs. cost trade-offs, and the innovation adoption gap.',
     icon: <Lightbulb size={24} />,
+    speechContent: `Section 5. Comparative Thematic Analysis. First, the Workforce Crisis. Health systems are no longer closed loops. Exporters like the UK and India are losing talent to Importers like Australia and the UAE. Second, the Access versus Cost Trade-off. Beveridge systems ration by queue, while Bismarck systems ration by price. Taiwan is the outlier, having neither queues nor high costs, but paying for it in physician burnout. Third, Financial Protection. UHC fails when indirect costs are too high. Nations like India and Mexico are in the danger zone where out of pocket spending exceeds 30%.`,
     content: (
       <>
         <h4 className="text-lg font-bold text-sky-800 mb-2">5.1 The Workforce Crisis</h4>
@@ -233,6 +239,7 @@ export const reportSections: ReportSection[] = [
     title: '6. Summary Ranking Table',
     excerpt: 'Detailed metrics for the Top 50 UHC Systems including OOP spending and 2025 trends.',
     icon: <Table2 size={24} />,
+    speechContent: `Section 6 Summary Ranking Table. Top highlights: Singapore is rank 1 with stable trends. Taiwan is rank 2. Australia is rank 3 with an improving trend. The United Kingdom is rank 19 with a declining trend due to workforce issues. Canada is rank 20, also declining. India is rank 50 but showing improvement in scale.`,
     content: (
       <div className="overflow-x-auto">
         <table className="w-full text-sm border-collapse">
@@ -284,6 +291,7 @@ export const reportSections: ReportSection[] = [
     title: '7. Conclusion & Recommendations',
     excerpt: 'The era of "more spending equals better outcomes" has ended. Future viability depends on provider satisfaction.',
     icon: <BookOpen size={24} />,
+    speechContent: `Section 7. Conclusion and Recommendations. The era of "more spending equals better outcomes" has definitively ended. Key findings include the rise of the Asian Tigers of health—Singapore, Taiwan, and South Korea—and the erosion of the NHS model. The workforce is the system. Recommendations for policymakers are: Stabilize the workforce by implementing competitive remuneration; Digitize to de-bureaucratize; and consider hybrid funding models to offer resilience against inflation.`,
     content: (
       <>
         <h4 className="text-lg font-bold mb-3">Key Findings</h4>

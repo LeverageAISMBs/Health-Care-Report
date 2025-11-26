@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Label } from 'recharts';
+import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Label, Cell } from 'recharts';
 import { EfficiencyPoint } from '../../types';
 
 const data: EfficiencyPoint[] = [
@@ -56,7 +56,7 @@ export const EfficiencyChart: React.FC = () => {
                 <Tooltip content={<CustomTooltip />} cursor={{ strokeDasharray: '3 3' }} />
                 <Scatter name="Countries" data={data} fill="#0ea5e9">
                     {data.map((entry, index) => (
-                        <cell key={`cell-${index}`} fill={entry.outcome > 90 ? '#0ea5e9' : entry.outcome > 80 ? '#0284c7' : '#f59e0b'} />
+                        <Cell key={`cell-${index}`} fill={entry.outcome > 90 ? '#0ea5e9' : entry.outcome > 80 ? '#0284c7' : '#f59e0b'} />
                     ))}
                 </Scatter>
             </ScatterChart>

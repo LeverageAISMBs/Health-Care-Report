@@ -1,14 +1,16 @@
 import React, { useEffect, useRef } from 'react';
 import { X } from 'lucide-react';
+import { PlayButton } from './PlayButton';
 
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
+  speechContent?: string;
   children: React.ReactNode;
 }
 
-export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
+export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, speechContent, children }) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -44,7 +46,11 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }
         aria-modal="true"
       >
         <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-slate-50/50">
-          <h3 className="text-xl font-bold text-slate-800 pr-8 line-clamp-1">{title}</h3>
+          <div className="flex items-center space-x-4 pr-4">
+             {speechContent && <PlayButton textToSpeak={speechContent} title={title} />}
+             <h3 className="text-xl font-bold text-slate-800 line-clamp-1">{title}</h3>
+          </div>
+          
           <button 
             onClick={onClose}
             className="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-full transition-colors"
